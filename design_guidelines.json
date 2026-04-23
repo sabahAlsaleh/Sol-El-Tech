@@ -1,0 +1,98 @@
+{
+  "theme": "light",
+  "archetype": "4 (Swiss & High-Contrast) adapted for Nordic Minimalism",
+  "design_philosophy": "Clean light minimalist Nordic Scandinavian design. Generous white space, warm earthy/neutral palettes, highly readable sans-serif typography, high-performance layouts, conveying trust and technical expertise. 'Hygge' functionality.",
+  "colors": {
+    "background": "#FAFAFA",
+    "surface": "#FFFFFF",
+    "surface_secondary": "#F3F4F6",
+    "primary": "#0F172A",
+    "primary_hover": "#1E293B",
+    "secondary": "#F59E0B",
+    "text_main": "#111827",
+    "text_muted": "#4B5563",
+    "border": "#E5E7EB",
+    "accent": "#38BDF8"
+  },
+  "typography": {
+    "heading_font": "Outfit, sans-serif",
+    "body_font": "Manrope, sans-serif",
+    "h1": "text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-[#111827]",
+    "h2": "text-2xl sm:text-3xl lg:text-4xl font-medium tracking-tight text-[#111827]",
+    "h3": "text-xl sm:text-2xl font-medium text-[#111827]",
+    "h4": "text-lg sm:text-xl font-medium text-[#111827]",
+    "body": "text-base leading-relaxed text-[#4B5563]",
+    "small": "text-sm text-[#6B7280] uppercase tracking-widest"
+  },
+  "spacing_and_layout": {
+    "container_padding": "px-6 sm:px-8 lg:px-12",
+    "section_spacing": "py-16 sm:py-24 lg:py-32",
+    "bento_grid": "grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8",
+    "border_radius": "rounded-2xl"
+  },
+  "components": {
+    "navigation": "Sticky header with glassmorphism (backdrop-blur-md bg-white/80), clear logo, nav links (hidden on mobile, replaced with hamburger), primary CTA button.",
+    "hero": "Asymmetrical layout. Large bold heading, two CTAs. Subtle background texture or off-white background with a striking professional image of an electrician.",
+    "services_grid": "Cardless or subtle 1px border cards (border-[#E5E7EB] bg-white). Hover effect: slight lift (-translate-y-1) and shadow-lg. Icons using lucide-react (stroke-width 1.5).",
+    "about_section": "Two-column layout (image + text) with ample padding. Organic or rounded rectangle image framing.",
+    "process_section": "Vertical timeline or 4-column horizontal steps. Use clear numerals and minimal icons.",
+    "why_choose_us": "List or grid format highlighting 5 USPs with check-circle icons.",
+    "contact_form": "Shadcn UI forms, clean inputs (border-b only or rounded-md with soft borders), solid primary CTA button.",
+    "footer": "Dark background (primary color #0F172A) with white/light gray text for high contrast. Simple links, contact info, service area."
+  },
+  "motion_and_interactions": {
+    "hover_states": "Buttons translate-y-[-2px] with increased shadow. Links underline animation.",
+    "scroll_animations": "Subtle fade-in and slide-up (framer-motion or simple CSS) for sections as they enter viewport.",
+    "transition": "all 0.3s ease"
+  },
+  "icons": {
+    "library": "lucide-react",
+    "style": "Minimalist, stroke-width: 1.5, color: primary (#0F172A) or secondary (#F59E0B)"
+  },
+  "media": {
+    "hero_image": {
+      "url": "https://images.pexels.com/photos/9679179/pexels-photo-9679179.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Technician working on circuit breaker panel, adjusting electrical wires indoors.",
+      "category": "hero"
+    },
+    "services": [
+      {
+        "url": "https://images.pexels.com/photos/34054464/pexels-photo-34054464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Electrician troubleshooting panel",
+        "category": "service_felsokning"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1635424710918-d5c138981922?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODF8MHwxfHNlYXJjaHwzfHxzb2xhciUyMHBhbmVsJTIwaW5zdGFsbGF0aW9uJTIwcm9vZnxlbnwwfHx8fDE3NzY5NTk0NzV8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Solar panel installation",
+        "category": "service_solpaneler"
+      },
+      {
+        "url": "https://images.pexels.com/photos/16423104/pexels-photo-16423104.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Smart home control panel",
+        "category": "service_smarta_hem"
+      },
+      {
+        "url": "https://images.pexels.com/photos/5391510/pexels-photo-5391510.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Electric vehicle charging",
+        "category": "service_laddbox"
+      }
+    ],
+    "about_image": {
+      "url": "https://images.pexels.com/photos/9679179/pexels-photo-9679179.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Professional electrician team working",
+      "category": "about"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Use pure HTML/Tailwind for structural layouts to achieve the organic/asymmetrical Nordic design. Use Shadcn components for interactive parts (Contact form).",
+    "Ensure all text is in Swedish as per the problem statement.",
+    "Implement a sticky navigation with glassmorphism.",
+    "Use generous padding (e.g. py-24) to create breathing room characteristic of Scandinavian design.",
+    "Include 'data-testid' attributes on all buttons, links, and form inputs for testing.",
+    "Avoid using Inter font for headings. Use Outfit or Manrope.",
+    "Render the 12 services in a responsive bento-like grid using Lucide icons.",
+    "The 12 services to include: Elcentral, Eluttag, Felsökning av el, Laddbox, Renovering av elnät, Smarta hem, Solpaneler, Spishäll, Strömbrytare, Styrteknik, Taklampa, Vitvaror.",
+    "Process section should clearly display the 4 steps: Kontakt, Inspektion & offert, Installation, Kontroll & färdigställande.",
+    "Why Choose Us section: 5 USPs: Certifierade elektriker, Snabb service, Transparent prissättning, Hög säkerhetsstandard, Moderna lösningar."
+  ]
+}
